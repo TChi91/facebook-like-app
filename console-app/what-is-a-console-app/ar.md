@@ -8,7 +8,7 @@
 
 لنفترض أن لدينا الأمر التالي:
 
-```
+```python
 print('hello')
 ```
 
@@ -16,7 +16,7 @@ print('hello')
 
 كنا نقوم بفتح CMD أو terminal في VSCode ثم نكتب
 
-```
+```python
 python my_app.py
 ```
 

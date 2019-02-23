@@ -1,6 +1,6 @@
 في حال أردت عمل أكثر من route بإمكانك ذلك بكتابة أكثر من سطر بهذا الشكل:
 
-```
+```python
 @app.route('/index')
 @app.route('/')
 def home:

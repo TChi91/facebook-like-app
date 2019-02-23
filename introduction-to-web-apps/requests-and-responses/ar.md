@@ -2,7 +2,7 @@
 
 قمنا بكتابة الأسطر:
 
-```
+```python
 from flask import Flask
 
 app = Flask(__name__)
@@ -25,6 +25,24 @@ app.run()
 إحدى هذه الأنواع هي GET, والتي تعني "**اجلب**"... من اسمها.
 
 يوجد طلبات أخرى مثل POST لإنشاء عنصر, أو DELETE لحذف عنصر, سنتعرف عليها مستقبلاً :wink:
+
+## هممم... ولكن, كيف عرف flask أننا نريد GET ؟
+
+بطبيعة الحال, flask تقوم بإضافة البارامتر `methods = ['GET']` والذي يقوم باستقبال طلبات GET... أي أنك حينما تكتب:
+
+```python
+@app.route('/index')
+def home():
+    return 'Hi there'
+```
+
+ستقوم فلاسك بترجمتها إلى:
+
+```python
+@app.route('/index', methods = ['GET'])
+def home():
+    return 'Hi there'
+```
 
 ## ماهو المهم أن تعرفه ؟
 

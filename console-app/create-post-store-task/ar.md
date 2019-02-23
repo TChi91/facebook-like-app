@@ -6,7 +6,7 @@
 
 لدينا هذا الكلاس حالياً:
 
-```
+```python
 class Post:
     def __init__(self, id, photo_url, name, body):
         self.id = id
@@ -33,7 +33,7 @@ class Post:
 
 لدينا الدوال التالية:
 
-```
+```python
 class Post:
     def __init__(self, id, photo_url, name, body):
         self.id = id
@@ -74,7 +74,7 @@ class PostStore:
 
 قمت بحفظ هذه الأكواد في ملف اسمه store_test.py
 
-```
+```python
 from store import PostStore, Post
 
 post_store = PostStore()
