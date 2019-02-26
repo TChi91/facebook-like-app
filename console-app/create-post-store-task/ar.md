@@ -1,4 +1,4 @@
-![homepage](./assets/factory.jpg)
+![homepage](./assets/factory.gif)
 
 ## مصنع الآيس كريم !
 
