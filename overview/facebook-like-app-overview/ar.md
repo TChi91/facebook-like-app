@@ -1,4 +1,4 @@
-![CreditCard](./assets/posty.png)
+![posty](./assets/posty.png)
 
 ## مالذي سنقوم به في هذه الورشة ؟
 
