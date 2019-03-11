@@ -4,14 +4,14 @@
 
 ستحتاج أولاً إلى إضافة routing:
 
-```
+```python
 @app.route('/posts/update/<int:id>', methods = ['GET', 'POST'])
 def post_update(id):
 ```
 
 لاحظ أنك هذه المرة ستأخذ الـ id الخاص بالمنشور بمعنى أن زر Edit في الصفحة يحتوي على الرابط:
 
-```
+```html
 <a href="{{ url_for('post_update', id=post.id) }}">Edit</a> |
 ```
 

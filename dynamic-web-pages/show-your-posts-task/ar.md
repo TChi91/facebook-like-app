@@ -51,7 +51,7 @@ posts=post_store.get_all()
 
 مثال على عرض صور كاتبي المنشورات:
 
-```
+```python
 {% for post in posts %}
 <img src="{{post.photo_url}}">
 {% endfor %}
