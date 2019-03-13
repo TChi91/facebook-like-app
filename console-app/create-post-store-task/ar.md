@@ -125,9 +125,9 @@ class PostStore:
 
 <video controls>
 
-    <source src="./assets/store-terminal.webm" type="video/webm">
+    <source src="https://raw.githubusercontent.com/coretabs-academy/facebook-like-app/master/console-app/create-post-store-task/assets/store-terminal.webm" type="video/webm">
 
-    <source src="./assets/store-terminal.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/coretabs-academy/facebook-like-app/master/console-app/create-post-store-task/assets/store-terminal.mp4" type="video/mp4">
 
     يرجى استعمال متصفح Chrome (وتحديث النسخة) لعرض الفيديو
 </video>
