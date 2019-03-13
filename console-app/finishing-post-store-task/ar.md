@@ -1,6 +1,6 @@
 ![half](./assets/half.jpg)
 
-*مصدر الصورة: youtube.com/watch?v=wovbrTtFA8c*
+*مصدر الصورة: youtube/watch?v=wovbrTtFA8c*
 
 ### قمنا ببناء نصف مصنع الآيس الكريم
 
