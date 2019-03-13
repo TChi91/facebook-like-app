@@ -66,9 +66,73 @@ class PostStore:
 
 ## ماهي المهمة المطلوبة ؟
 
-قم بملئ أكواد الدوال بالأعلى, بحيث تقوم كل دالة بوظيفتها حسب الوصف بداخلها.
+في هذه المهمة فقط سنقوم بكتابة الدوال:
 
-## كيف أجرب الحل خاصتي ؟
+1. get_all
+2. add
+3. get_by_id
+
+سنقوم بالعمل على الدوال الأخرى (delete و update) في المهمة القادمة.
+
+قم بملئ أكواد الدوال المشار إليها, بحيث تقوم كل دالة بوظيفتها حسب الوصف بداخلها.
+
+## كيف تعمل الدالة get_by_id ؟
+
+سنعطيك تلميح بسيط :smile:
+
+الدالة تقوم بالدخول على كل المنشورات في القائمة ومقارنة كل id, وفي حالة تطابق الـ id, تقوم بإرجاع العنصر بهذا الشكل:
+
+```
+    def get_by_id(self, id):
+        # search for post by id
+        result = None
+
+        for post in posts:
+            # قم بمقارنة الـ
+            # id
+            # واخرج من الحلقة في حال التطابق باستعمال الأمر
+            # break
+
+        return result
+``` 
+
+## كيف أجرب الدوال التي كتبتها ؟
+
+لتجربة الدوال ببساطة تدخل على الـ **CMD** أو terminal, وتكتب **الأمر python** الذي سيدخلك على موجه سطر أوامر بايثون, ثم تقوم بتجربة الدوال بهذا الشكل:
+
+```python
+>>> from store import Post, PostStore
+>>> post1 = Post(id=1,
+             photo_url='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=50&w=50',
+             name='Sara',
+             body='Lorem Ipsum')
+>>> post2 = Post(id=2,
+             photo_url='https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=100&w=100',
+             name='John',
+             body='Lorem Ipsum')
+>>> store = PostStore()
+>>> store.get_all()
+[]
+>>> store.add(post1)
+>>> store.add(post2)
+>>> store.get_all()
+[<store.Post object at 0x000000462B35E5C0>, <store.Post object at 0x000000462B35E6A0>]
+>>> store.get_all()[0].name
+'Sara'
+```
+
+فيديو يوضح كيفية استعمال الأوامر داخل terminal الخاص بـ VSCode (نفس الطريقة على PyCharm):
+
+<video controls>
+
+    <source src="./assets/store-terminal.webm" type="video/webm">
+
+    <source src="./assets/store-terminal.mp4" type="video/mp4">
+
+    يرجى استعمال متصفح Chrome (وتحديث النسخة) لعرض الفيديو
+</video>
+
+## كيف أختبر الحل خاصتي ؟
 
 قمنا بكتابة اختبارات للأكواد tests, وفي حالة كانت أكواد تعمل بشكل سليم ستظهر الرسالة All tests passed successfully
 
@@ -105,30 +169,8 @@ def get_by_id_should_retrieve_same_object():
     assert second_post is retrieved_second_post
 
 
-def update_should_modify_object():
-    fields_to_update = {
-        'photo_url': 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        'name': 'Alex', 
-        'body': 'Interesting topic right here!'
-    }
-
-    # update second post
-    post_store.update(2, fields_to_update)
-    
-    assert post_store.get_by_id(2).name == 'Alex'
-    assert post_store.get_by_id(2).body == 'Interesting topic right here!'
-
-
-def delete_should_remove_object():
-    post_store.delete(2)
-
-    assert len(post_store.get_all()) == 1
-    assert post_store.get_all()[0].id == 1
-
 store_should_add_posts()
 get_by_id_should_retrieve_same_object()
-update_should_modify_object()
-delete_should_remove_object()
 
 print('All tests passed successfully!')
 ```
