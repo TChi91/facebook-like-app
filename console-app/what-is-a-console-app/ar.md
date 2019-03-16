@@ -32,6 +32,6 @@ python my_app.py
 
 بمجرد أن ننتهي من عمل console app, سنقوم بتحويله إلى موقع أنيق يتعامل معه المستخدمين من خلال الواجهة في المتصفح.
 
-## لنبدأ مباشرة :wink: 
+## لنبدأ مباشرة <span style="font-size: 26px;">:wink:</span>
 
 * مصدر صورة console app: https://blogs.msdn.microsoft.com/saraford/2008/09/19/did-you-know-if-you-do-a-ctrlf5-on-a-console-application-the-console-stays-open-317/

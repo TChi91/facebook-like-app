@@ -60,7 +60,7 @@ class PostStore:
         # delete post by id - id حذف منشور بالمعرف
 ```
 
-هذه الدوال مشابهه جداً للعمليات التي عرفناها سابقاً CRUD - Create Read Update Delete :wink: 
+هذه الدوال مشابهه جداً للعمليات التي عرفناها سابقاً CRUD - Create Read Update Delete <span style="font-size: 26px;">:wink:</span> 
 
 بإمكانك نسخ هذه الأكواد إلى ملف اسمه store.py.
 

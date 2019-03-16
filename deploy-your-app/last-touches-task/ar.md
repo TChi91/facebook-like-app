@@ -60,7 +60,7 @@
 
 ## بقي صفحة تعديل المنشور post-update.html أين ذهب ؟
 
-كما قلنا أن ملف post-update.html مشابه للملف post-add.html, بإمكانك كتابة الملف بسهولة :wink: 
+كما قلنا أن ملف post-update.html مشابه للملف post-add.html, بإمكانك كتابة الملف بسهولة <span style="font-size: 26px;">:wink:</span>
 
 ## ماهي المهمة المطلوبة ؟
 
