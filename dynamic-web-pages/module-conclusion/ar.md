@@ -8,9 +8,6 @@
 
 ## كيف تعمل آلية حذف المنشور delete post
 
-![cute-part](./assets/cute-part.gif)
-<em>مصدر الصورة: https://giphy.com/gifs/kids-how-diet-wCqeZS6Rlzn2g</em>
-
 أول شيء نقوم به عند عرض المنشورات هو إضافة روابط الحذف لكل منشور في صفحة index.html عن طريق:
 
 ```html
@@ -76,6 +73,12 @@ def post_delete(id):
 ### لكن, لماذا نجعل المستخدم يعود redirect للصفحة الرئيسية, وهو أصلاً كان في نفس الصفحة ؟
 
 في الواقع نحن لا نريد إعادة توجيهه, ولكن فقط نحن نقوم بعمل تحديث refresh للصفحة لجلب قائمة المنشورات مجدداً (كون أحدها تم حذفه)	<span style="font-size: 26px;">:slightly_smiling_face:</span>
+
+## فاصل كتكوت <span style="font-size: 26px;">:laughing:</span>
+
+![cute-part](./assets/cute-part.gif)
+<div align="center"><em>مصدر الصورة: https://giphy.com/gifs/kids-how-diet-wCqeZS6Rlzn2g</em></div>
+
 
 ## الأمر مختلف قليلاً مع تعديل المنشور update post
 
